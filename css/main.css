@@ -24,6 +24,12 @@ a{
 .linear-bg{
     background: var(--linear-bg);
 }
+.bold-500{
+    font-weight: 500;
+}
+.bold-600{
+    font-weight: 600;
+}
 .bold-700{
     font-weight: 700;
 }

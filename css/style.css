@@ -78,22 +78,48 @@
     /* padding: 3px; */
 }
 
-
 #about-section{
     background-color: var(--white);
 }
 
-/* MEDIA QUERIES */
+#services-section{
+    background-size: cover;
+}
+#services-section .title{
+    letter-spacing: 2px;
+    text-align: center
+}
+#services-section .card{
+    border: 0px;
+    border: 2px solid var(--primary);
+    border-radius: var(--radius);
+    margin-top: 15px;
+}
+#services-section .card:hover .card-body .icon-box i{
+    background-color: var(--primary);
+    color: var(--white);
+}
+#services-section .card .card-body{
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-gap: 5px;
+}
+#services-section .card .card-body .icon-box{
+    text-align: center;
+}
+#services-section .card .card-body .icon-box i{
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    font-size: 40px;
+    padding: 15px;
+    margin-top: 5px;
+    transition: .5s;
+}
 
-@media only screen and (max-width: 991px) {
-    .navbar-top .nav-link.active, .navbar-top .nav-link {
-        clip-path: none !important;
-    }
-    .navbar-top .sim{
-        /* visibility: hidden; */
-        display: none !important;
-    }
-    .banner-dev-img{
-        height: 250px;
-    }
-  }
+#services-section .card .card-body p{
+    text-align: justify;
+}
+
+
+/* MEDIA QUERIES */
+@import url('media-query.css');
