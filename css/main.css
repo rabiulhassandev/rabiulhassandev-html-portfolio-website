@@ -61,3 +61,7 @@ a{
     letter-spacing: 2px;
     font-weight: 700;
 }
+
+.max-100{
+    max-width: 100% !important;
+}

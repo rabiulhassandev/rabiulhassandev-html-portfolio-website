@@ -160,10 +160,30 @@
 #latest-projects-section{
     background-color: #fff9ec;
 }
+#latest-projects-section .card{
+    border: 0px;
+    border-radius: var(--radius);
+    box-shadow: 0px 0px 11px #00000042;
+    overflow: hidden;
+    -webkit-border-radius: var(--radius);
+    -moz-border-radius: var(--radius);
+    -ms-border-radius: var(--radius);
+    -o-border-radius: var(--radius);
+}
 
+#latest-projects-section .keyword{
+    background-color: #feccb58b;
+    color: var(--black);
+}
+#latest-projects-section .project-img{
+    width: 100%;
+    /* border: 2px solid black; */
+}
 
-
-
+#latest-projects-section .footer{
+    display: grid;
+    grid-template-columns: 50% auto;
+}
 
 /* MEDIA QUERIES */
 @media only screen and (max-width: 991px) {
