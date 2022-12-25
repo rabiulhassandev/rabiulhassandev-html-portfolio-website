@@ -185,6 +185,36 @@
     grid-template-columns: 50% auto;
 }
 
+#contact-section{
+    background-size: cover;
+    /* background-position: center; */
+}
+#contact-section .box{
+    display: flex;
+    align-items: center;
+}
+#contact-section .box i{
+    color: var(--white);
+    background-color: var(--primary);
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.social-icons i{
+    font-size: 20px;
+    margin: 3px;
+    color: #44474a;
+}
+.social-icons i:hover{
+    color: var(--primary);
+}
+
 /* MEDIA QUERIES */
 @media only screen and (max-width: 991px) {
     .navbar-top .nav-link.active, .navbar-top .nav-link {

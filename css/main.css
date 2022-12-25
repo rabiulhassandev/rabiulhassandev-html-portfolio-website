@@ -21,6 +21,9 @@ a{
 .color-default{
  color: var(--primary);
 }
+.color-hover:hover{
+    color: var(--primary) !important;
+}
 .linear-bg{
     background: var(--linear-bg);
 }
@@ -64,4 +67,12 @@ a{
 
 .max-100{
     max-width: 100% !important;
+}
+.form-control{
+    min-height: 42px;
+    border-radius: 0px;
+}
+.form-control:focus{
+    box-shadow: none;
+    border-color: var(--primary);
 }
