@@ -57,3 +57,7 @@ a{
     color: white;
     box-shadow: none;
 }
+.heading{
+    letter-spacing: 2px;
+    font-weight: 700;
+}
