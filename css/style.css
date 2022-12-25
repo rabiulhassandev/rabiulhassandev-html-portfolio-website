@@ -1,0 +1,99 @@
+@import url('main.css');
+
+.navbar-top .navbar-nav>li>a {
+	font-size: 15px;
+	margin-right: 20px;
+	color: var(--white);
+}
+
+
+.navbar-top .navbar-toggler {
+	padding: .20rem .50rem;
+	font-size: 1.25rem;
+	line-height: 1;
+	background-color: transparent;
+	border: 1px solid var(--white);
+}
+
+.navbar-top .nav-link {
+    color: var(--blank) !important;
+    font-weight: 500;
+    padding: 10px 20px !important;
+    /* clip-path: polygon(0 0, 92% 0, 100% 100%, 8% 100%); */    
+    clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
+    transition: 0.5s;
+}
+.navbar-top .nav-link.active, .navbar-top .nav-link:hover{
+    background: var(--linear-bg);
+    color: var(--white) !important;
+    /* border-radius: 10px; */
+    /* font-weight: 700; */
+    clip-path: polygon(8% 0, 100% 0%, 92% 100%, 0% 100%);
+}
+
+.navbar-top .wrapper {
+	width: 100%;
+	position: absolute;
+	height: 100%;
+	background-color: var(--primary);
+	clip-path: polygon(81% 0, 100% 0, 100% 50%, 100% 100%, 71% 100%);
+	transition: 1s all;
+}
+
+.navbar-top .navbar-brand img {
+	max-height: 50px;
+}
+
+.navbar-top .navbar-red:hover .wrapper {
+	clip-path: polygon(81% 0, 100% 0, 100% 50%, 100% 100%, 65% 100%);
+}
+
+.navbar-red {
+	background-color: var(--white);
+	color: var(--white);
+}
+.all-show {
+	z-index: 10;
+}
+
+#banner-area-section{
+    background-color: #fff9ec;
+}
+
+.banner-area-box{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.banner-title-1{
+    letter-spacing: 2px;
+}
+.banner-title-2{
+    font-weight: 700;
+}
+.banner-dev-img{
+    height: 350px;
+    border-radius: 50%;
+    border: 5px solid var(--primary);
+    /* padding: 3px; */
+}
+
+
+#about-section{
+    background-color: var(--white);
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 991px) {
+    .navbar-top .nav-link.active, .navbar-top .nav-link {
+        clip-path: none !important;
+    }
+    .navbar-top .sim{
+        /* visibility: hidden; */
+        display: none !important;
+    }
+    .banner-dev-img{
+        height: 250px;
+    }
+  }

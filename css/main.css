@@ -1,0 +1,53 @@
+:root {
+    --white: #ffffff;
+    --blank: #000000;
+    --primary: #f75023;
+    --primary-bg: #e64215;
+    --linear-bg: linear-gradient(45deg, #ff222280, #f75023);
+    --radius: 0px;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-color: #eee;
+}
+
+a{
+    text-decoration: none;
+}
+.bg-default{
+    background: var(--primary);
+}
+.color-default{
+ color: var(--primary);
+}
+.linear-bg{
+    background: var(--linear-bg);
+}
+.bold-700{
+    font-weight: 700;
+}
+.btn-default{
+    border: 2px solid transparent;
+    border-radius: var(--radius);
+    background: var(--primary);
+    color: var(--white);
+    transition: .5s;
+}
+.btn-default:hover, .btn-default:focus{
+    background: var(--primary-bg);
+    color: white;
+    box-shadow: none;
+}
+.btn-default-outline{
+    border: 2px solid var(--primary-bg);
+    border-radius: var(--radius);
+    background: transparent;
+    color: var(--primary);
+    transition: .5s;
+}
+.btn-default-outline:hover, .btn-default-outline:focus{
+    background: var(--primary-bg);
+    color: white;
+    box-shadow: none;
+}
