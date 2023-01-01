@@ -3,7 +3,7 @@
   
     display: grid;
     align-content: center;
-    overflow: hidden;
+    overflow: visible;
     gap: var(--space);
     width: 100%;
     font-family: "Corben", system-ui, sans-serif;

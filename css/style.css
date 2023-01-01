@@ -4,6 +4,10 @@
     display: none;
 }
 
+.navbar-toggler:focus{
+    box-shadow: none !important;
+}
+
 .navbar-top .navbar-nav>li>a {
 	font-size: 15px;
 	margin-right: 20px;
@@ -105,6 +109,10 @@
 #services-section .card:hover .card-body .icon-box i{
     background-color: var(--primary);
     color: var(--white);
+}
+#services-section .card:hover{
+    cursor: pointer;
+    border-color: white;
 }
 #services-section .card .card-body{
     display: grid;
