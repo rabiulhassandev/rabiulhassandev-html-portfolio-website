@@ -254,4 +254,11 @@
         text-align: left;
         margin-bottom: 10px;
     }
+    #services-section .card .card-body p{
+        text-align: left !important;
+    }
+    .marquee__group img {
+        max-width: 80px;
+        max-height: 80px;
+    }
 }
