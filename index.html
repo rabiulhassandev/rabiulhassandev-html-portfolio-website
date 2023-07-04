@@ -10,9 +10,9 @@
         <link rel="stylesheet" href="css/marquee.css">
         <link rel="stylesheet" href="css/style.css">
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
         <script async src="https://unpkg.com/typer-dot-js@0.1.0/typer.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     </head>
     <body>
 
@@ -23,7 +23,7 @@
                 <a class="navbar-brand" href="#">
                   <img src="images/logo.png" alt="rabiulhassandev">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -32,16 +32,16 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
+                            <a class="nav-link" href="#about-section">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
+                            <a class="nav-link" href="#services-section">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Projects</a>
+                            <a class="nav-link" href="#latest-projects-section">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">contact</a>
+                            <a class="nav-link" href="#contact-section">Contact</a>
                         </li>
                         <li class="nav-item">
                             <!-- <a class="nav-link" href="#"><i class="bx bx-search"></i></a> -->
@@ -52,7 +52,7 @@
                     </div> -->
                     <div class="d-flex flex-column sim">
                         <span>Amazing works & 24/7 support</span>
-                        <a href="#"><span class="badge bg-white text-success">Connect With Me</span></a>
+                        <a href="#contact-section"><span class="badge bg-white text-success">Connect With Me</span></a>
                     </div>
                 </div>
             </div>
@@ -120,6 +120,17 @@
             </div>
           </div>
         </section>
+
+        <p>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            Button with data-bs-target
+          </button>
+        </p>
+        <div class="collapse" id="collapseExample">
+          <div class="card card-body">
+            Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+          </div>
+        </div>
 
         <section id="about-section">
           <div class="container pt-5">
@@ -237,7 +248,7 @@
                                       <div id="education_accordion">
                                         <div class="card border-0 rounded-0">
                                           <div class="card-header" id="education_accordion_heading_1">
-                                            <div class="item" data-toggle="collapse" data-target="#education_accordion_item_1" aria-expanded="true" aria-controls="education_accordion_item_1">
+                                            <div class="item" data-bs-toggle="collapse" data-bs-target="#education_accordion_item_1" aria-expanded="true" aria-controls="education_accordion_item_1">
                                               <h6 class="mb-0"><b> <i class='bx bx-chevrons-right bx-flip-vertical' ></i> B.Sc In CSE</b></h6>
                                               <span class="badge bg-default">2022-Present</span>
                                             </div>
@@ -252,7 +263,7 @@
                                         </div>
                                         <div class="card border-0 rounded-0">
                                           <div class="card-header" id="education_accordion_heading_2">
-                                            <div class="item" data-toggle="collapse" data-target="#education_accordion_item_2" aria-expanded="true" aria-controls="education_accordion_item_2">
+                                            <div class="item" data-bs-toggle="collapse" data-bs-target="#education_accordion_item_2" aria-expanded="true" aria-controls="education_accordion_item_2">
                                               <h6 class="mb-0"><b><i class='bx bx-chevrons-right bx-flip-vertical' ></i> Higher Secondary School</b></h6>
                                               <span class="badge bg-default">2019-2021</span>
                                             </div>
@@ -267,7 +278,7 @@
                                         </div>
                                         <div class="card border-0 rounded-0">
                                           <div class="card-header" id="education_accordion_heading_3">
-                                            <div class="item" data-toggle="collapse" data-target="#education_accordion_item_3" aria-expanded="true" aria-controls="education_accordion_item_3">
+                                            <div class="item" data-bs-toggle="collapse" data-bs-target="#education_accordion_item_3" aria-expanded="true" aria-controls="education_accordion_item_3">
                                               <h6 class="mb-0"><b> <i class='bx bx-chevrons-right bx-flip-vertical' ></i> Secondary School Certificate</b></h6>
                                               <span class="badge bg-default">2014-2019</span>
                                             </div>
@@ -307,7 +318,7 @@
                                     <div id="experience_accordion">
                                       <div class="card border-0 rounded-0">
                                         <div class="card-header" id="experience_accordion_heading_1">
-                                          <div class="item" data-toggle="collapse" data-target="#experience_accordion_item_1" aria-expanded="true" aria-controls="experience_accordion_item_1">
+                                          <div class="item" data-bs-toggle="collapse" data-bs-target="#experience_accordion_item_1" aria-expanded="true" aria-controls="experience_accordion_item_1">
                                             <h6 class="mb-0"><b><i class='bx bx-chevrons-right bx-flip-vertical' ></i>Sr. Laravel developer</b></h6>
                                             <span class="badge bg-default">Nov 2021-Present</span>
                                           </div>
@@ -345,7 +356,7 @@
                                       </div>
                                       <div class="card border-0 rounded-0">
                                         <div class="card-header" id="experience_accordion_heading_2">
-                                          <div class="item" data-toggle="collapse" data-target="#experience_accordion_item_2" aria-expanded="true" aria-controls="experience_accordion_item_2">
+                                          <div class="item" data-bs-toggle="collapse" data-bs-target="#experience_accordion_item_2" aria-expanded="true" aria-controls="experience_accordion_item_2">
                                             <h6 class="mb-0"><b><i class='bx bx-chevrons-right bx-flip-vertical' ></i> Full-Stack Developer</b></h6>
                                             <span class="badge bg-default">Sep 2020-Sep 2021</span>
                                           </div>
@@ -377,7 +388,7 @@
                                       </div>
                                       <div class="card border-0 rounded-0">
                                         <div class="card-header" id="experience_accordion_heading_3">
-                                          <div class="item" data-toggle="collapse" data-target="#experience_accordion_item_3" aria-expanded="true" aria-controls="experience_accordion_item_3">
+                                          <div class="item" data-bs-toggle="collapse" data-bs-target="#experience_accordion_item_3" aria-expanded="true" aria-controls="experience_accordion_item_3">
                                             <h6 class="mb-0"><b><i class='bx bx-chevrons-right bx-flip-vertical' ></i> Web Design Course Instructor</b></h6>
                                             <span class="badge bg-default">Feb 2020-Aug 2020</span>
                                           </div>
